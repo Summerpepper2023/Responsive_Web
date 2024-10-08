@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --text-font: "Montserrat", sans-serif;
+    --primary-color: #ff6500;
+    --secondary-color: #1e3e62;
+    --text-color: #666;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--text-font);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+
+section .fila1{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+section .fila1 article{
+    width: 50%;
+}
+
+section .fila1 h2{
+    color: var(--primary-color);
+    font-size: 2em;
+}
+
+section .fila1 h1{
+    color: var(--secondary-color);
+    font-size: 3em;
+}
+
+section .fila1 p{
+    padding-top: 3vw;
+}
+
+
+section .fila2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+section .fila2 .tarjeta{
+    width: 22%;
+    background: #f6f6f6;
+    border-radius: 20PX;
+    text-align: center;
+    color: var(--secondary-color);
+    height: fit-content;
+    transition: .5s;
+    
+
+}
+
+.fila2 img{
+    width: 100%;
+}
+
+.fila2 h3{
+    padding: 2vh 0 .75vh;
+    padding: 1vh 0;
+}
+
+.fila2 h4{
+    font-weight: 400;
+    padding-bottom: 1.5vh;
+}
+
+.fila2 .icons{
+    padding: 0 .50vw 1.6vh;
+    
+}
+
+.fila2 i{
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin: 0 .50vw;
+    transition: .5s;
+}
+
+section .fila2 .tarjeta:hover{
+    box-shadow: 0 0 20px 0 #ff650078;
+    transform: scale(1.05);
+}
+
+.fila2 .tarjeta:hover i{
+    color: var(--primary-color);
+}
+
+/*El codigo responsive siempre debe estarl final del codigo css*/
+/*VERSION RESPONSIBLE TABLET*/
+
+/*Se establece un rango de ancho para la pantalla en este caso de las tablets*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    section .fila1 article{
+        width: 100%;
+    }
+
+    section .fila2 .tarjeta{
+        width: 48%;
+        margin-bottom: 40px;
+    }
+}
+
+
+/*VERSION RESPONSIBLE SMARTPHONE*/
+
+/*Se establece un rango de ancho para la pantalla en este caso de las tablets*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    section .fila1 article{
+        width: 100%;
+    }
+
+    section .fila2 .tarjeta{
+        width: 90%;
+        margin: 0 auto 40px;
+    }
+}
+
