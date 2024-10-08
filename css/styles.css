@@ -129,7 +129,7 @@ section .fila2 .tarjeta:hover{
     }
 
     section .fila2 .tarjeta{
-        width: 90%;
+        width: 100%;
         margin: 0 auto 40px;
     }
 }
